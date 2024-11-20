@@ -13,8 +13,9 @@ function report_competency_statistic_extend_navigation($reportnav, $course, $con
 function report_competency_statistic_extend_navigation_user($navigation, $user, $course) {
     $url = new moodle_url('/report/competency_statistic/index.php', array('id'=>$course->id, 'user_id'=>$user->id, 'statistic_all_competencies'=>1));
     $navigation->add(get_string('reportname', 'report_competency_statistic'), $url);
-    $url = new moodle_url('/report/competency_statistic/index.php', array('user_id'=>$user->id));
-    $navigation->add(get_string('reportname', 'report_competency_statistic'), $url);
+    // Деактивируем ещё один пункт с таким же названием (?) ↓.
+    // $url = new moodle_url('/report/competency_statistic/index.php', array('user_id'=>$user->id));
+    // $navigation->add(get_string('reportname', 'report_competency_statistic'), $url);
 }
 
 function report_competency_statistic_myprofile_navigation(core_user\output\myprofile\tree $tree, $user, $iscurrentuser, $course) {
