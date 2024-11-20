@@ -9,7 +9,7 @@
  * @license    -
  */
 
-$plugin->version = 2024050100;  // YYYYMMDDHH (year, month, day, 24-hr time)
+$plugin->version = 2024112100;  // YYYYMMDDHH (year, month, day, 24-hr time)
 $plugin->requires = 2016060900; // YYYYMMDDHH (This is the release version for Moodle 2.0)
 $plugin->component = 'report_competency_statistic'; // Full name of the plugin (used for diagnostics)
 $plugin->release = 'Competency statistics report v0.2';
