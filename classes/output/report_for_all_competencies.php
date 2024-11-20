@@ -55,7 +55,7 @@ class report_for_all_competencies extends report_general implements renderable, 
 
         if (count($my_list_competency) != 0) {
           for($i = 0; $i < count($my_list_competency); $i++) {
-            $usercompetencycourses[$i] = mb_strimwidth($my_list_competency[$i]->competency, 0, 100, "...") . " (дисциплин: " . $my_list_competency[$i]->count_discipline . ")";
+            $usercompetencycourses[$i] = mb_strimwidth($my_list_competency[$i]->competency, 0, 80, "…") . " (дисциплин: " . $my_list_competency[$i]->count_discipline . "), средний балл";
             $chart_data[$i] = (int)$my_list_competency[$i]->score;
           }
   
